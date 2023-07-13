@@ -117,3 +117,29 @@ h1 {
 .label-score {
   margin-bottom: 2rem;
 }
+
+/* Responsivness rules */
+
+/* Large screens */
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 35%;
+  }
+  main {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: start;
+    gap: 24px;
+  }
+  .right {
+    margin-top: 10rem;
+    text-align: center;
+  }
+}
